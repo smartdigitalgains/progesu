@@ -4,3 +4,4 @@ docker-compose.yml
 gulpfile.js
 Makefile
 README.md
+.deployignore
