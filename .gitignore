@@ -1,0 +1,57 @@
+########################
+# TYPO3 CMS
+# global ignore file
+########################
+
+# Ignore by common IDEs used directories/files
+nbproject
+*.idea
+*.project
+.buildpath
+.project
+.settings
+.TemporaryItems
+.webprj
+node_modules
+
+# Ignore log files
+*.log
+
+## Ignore TYPO3 CMS directories and files
+
+# Ignore system folders and files
+/typo3
+/typo3_src
+/index.php
+#/.htaccess
+
+# Ignore upload and file directories
+/fileadmin/
+/fileadmin/user_upload/
+/fileadmin/_temp_/
+/fileadmin/_processed_/
+/uploads/
+
+# Ignore folders and files from typo3conf
+/typo3conf/autoload/
+/typo3conf/ext/extension_builder/
+/typo3conf/l10n
+/typo3conf/LocalConfiguration.php
+/typo3conf/PackageStates.php
+/typo3conf/ENABLE_INSTALL_TOOL
+
+# Ignore temp directory
+/typo3temp/
+typo3conf/autoload/autoload_classmap.php
+typo3conf/autoload/autoload_psr4.php
+typo3conf/.DS_Store
+typo3conf/LocalConfiguration.php
+typo3conf/PackageStates.php
+typo3conf/autoload/autoload_classmap.php
+typo3conf/autoload/autoload_psr4.php
+typo3conf/.DS_Store
+typo3conf/LocalConfiguration.php
+typo3conf/PackageStates.php
+.DS_Store
+typo3conf/FIRST_INSTALL
+typo3conf/.DS_Store
