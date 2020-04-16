@@ -1,0 +1,31 @@
+<div class="stage">
+
+    <img class="bg" src="/fileadmin{files.0.originalFile.identifier}" >
+
+    <f:if condition="{data.bodytext}">
+        <f:then>
+            <div class="container">
+                <div class="content">
+                  <div class="backlayer">
+
+                    <f:if condition="{data.header}">
+                        <f:then>
+                            <h2>{data.header}</h2>
+                        </f:then>
+                    </f:if>
+
+                    <p>{data.bodytext}</p>
+
+                    <f:if condition="{data.header_link} && {data.cta_text}">
+                        <f:then>
+                            <a href="{data.header_link}" class="button">{data.cta_text}</a>
+                        </f:then>
+                    </f:if>
+
+                    
+                  </div>
+                </div>
+            </div>             
+        </f:then>
+    </f:if>
+  </div>

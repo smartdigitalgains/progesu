@@ -1,0 +1,31 @@
+.accordeon{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+
+  .column{
+    flex-grow: 1;
+    height: auto;
+
+    .accordeon-header{
+      width: 100%;
+      text-align: center;
+      padding: 20px 0px 20px 0px;
+      background: #333;
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .content{
+      margin: 0 auto;
+      width: calc(100% - 40px);
+      text-align: center;
+      background: #eee;
+      display: none;
+      padding: 20px;
+    }
+
+  }
+
+}

@@ -1,0 +1,51 @@
+.promotion{
+  margin: 0 auto;
+  width: 100%;
+
+  .grid{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .box{
+      display: flex;
+      flex-direction: column;
+
+      @media(min-width:$s-breakpoint){
+        flex: 1 1 calc(100% / 1);
+      }
+  
+      @media(min-width:$m-breakpoint){
+        flex: 1 0 calc((100% / 4) - 100px);
+      }
+  
+      @media(min-width:$xl-breakpoint){
+        flex: 1 0 calc((100% / 4) - 100px);
+      }
+    
+
+      &:nth-child(2n){
+        background: #ededed;;
+      }
+
+      .column{
+        flex-grow: 1;
+        text-align: center;
+        padding: 25px;
+
+        img{
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+      }
+
+    }
+
+  }
+
+}

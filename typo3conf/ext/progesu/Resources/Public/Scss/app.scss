@@ -1,0 +1,88 @@
+/*COMPILE*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$xl-resolution: 1400px;
+$m-resolution: 1200px;
+$s-resolution: 100%;
+
+$xl-breakpoint: 1700px;
+$m-breakpoint: 1439px;
+$s-breakpoint: 375px;
+
+body,html{
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  .app{
+
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Open Sans";
+
+    @import 'templates/content';
+
+    @import 'templates/buttons';
+
+    @import 'templates/header';
+
+    @import 'templates/stage';
+
+    @import 'templates/promotion';
+    @import 'templates/buttons';
+    @import 'templates/square-teaser';
+    @import 'templates/quote-teaser';
+    @import 'templates/storage-list';
+    @import 'templates/accordeon';
+    @import 'templates/form';
+    @import 'templates/logos';
+
+
+    .not-mobile{
+      display:block;
+  
+      @media(max-width:$m-breakpoint){
+        display:none;
+      }
+
+    }
+
+    .mobile{
+      display:none;
+  
+      @media(max-width:$m-breakpoint){
+        display:block;
+      }
+  
+    }
+
+    .grid{
+      margin: 0 auto;
+
+      @media(min-width:$s-breakpoint){
+        width: $s-resolution;
+      }
+
+      @media(min-width:$m-breakpoint){
+        width: $m-resolution;
+      }
+
+      @media(min-width:$xl-breakpoint){
+        width: $xl-resolution;
+      }
+
+      @import 'templates/fonts';
+
+
+    }
+
+    @import 'templates/contact-teaser';
+
+    @import 'templates/footer';
+
+
+
+  }
+
+}

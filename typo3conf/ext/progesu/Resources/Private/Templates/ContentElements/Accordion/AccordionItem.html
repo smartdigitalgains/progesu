@@ -1,0 +1,22 @@
+{namespace sdg=SmartDigitalGains\Progesu\ViewHelpers}
+
+
+<div class="column">
+    <div class="accordeon-header"><i class="fas fa-chevron-down fa-fw"></i> {data.header}</div>
+    <div class="content">
+        <f:format.raw>
+            {data.bodytext}
+        </f:format.raw>
+
+        <f:if condition="{data.children}">
+            <f:then>
+
+                <f:for each="{data.children}" as="child">
+                    <f:format.raw><sdg:Content uid="{child.uid}" /></f:format.raw>
+                </f:for>                    
+
+            </f:then>
+        </f:if>
+
+    </div>
+</div>

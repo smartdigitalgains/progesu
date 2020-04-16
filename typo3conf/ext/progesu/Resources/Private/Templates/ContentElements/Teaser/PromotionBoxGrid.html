@@ -1,0 +1,13 @@
+{namespace sdg=SmartDigitalGains\Progesu\ViewHelpers}
+
+<div class="promotion">
+    <div class="grid">
+
+
+        <f:for each="{data.children}" as="child">
+            <f:format.raw><sdg:Content uid="{child.uid}" /></f:format.raw>
+        </f:for>
+
+    </div>
+  </div>
+

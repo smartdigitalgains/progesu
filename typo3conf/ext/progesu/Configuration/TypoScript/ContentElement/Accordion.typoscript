@@ -1,0 +1,12 @@
+tt_content.accordion =< lib.contentElement
+tt_content.accordion {
+   templateName = Accordion/Accordion
+      dataProcessing {
+         10 = SmartDigitalGains\Progesu\DataProcessing\ChildElementsProcessor
+         10 {
+               references.fieldName = parent
+               references.table = tt_content
+               as = children
+         }
+      }
+}

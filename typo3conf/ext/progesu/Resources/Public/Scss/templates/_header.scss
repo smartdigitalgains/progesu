@@ -1,0 +1,132 @@
+.header{
+  width:100%;
+  margin: 0 auto;
+  background: #242424;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 15px 0px 15px 0px;
+  height: 80px;
+
+  @media(min-width:$s-breakpoint){
+    position: initial;
+  }
+
+  @media(min-width:$m-breakpoint){
+    position: fixed;
+  }
+
+  @media(min-width:$xl-breakpoint){
+    position: fixed;
+  }
+
+  .grid{
+    height: 80px;
+
+    @media(min-width:$s-breakpoint){
+      width: 95%;
+    }
+
+    @media(min-width:$m-breakpoint){
+      width: $m-resolution;
+    }
+
+    @media(min-width:$xl-breakpoint){
+      width: $xl-resolution;
+    }
+
+    .row{
+
+      flex-grow: 1;
+
+      .button{
+        float: right;
+        margin: 15px;
+      }
+
+      .menu{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style-type:none;
+        float: right;
+
+        li{
+          position: relative;
+          height: 75px;
+
+          a{
+            display: block;
+            color:
+            #fff;
+            font-family: "Open Sans";
+            font-size: 1em;
+            text-decoration: none;
+            padding:20px 30px 20px 30px;
+            margin: 5px;
+            background:
+            #ffffff29;
+            border-bottom: 2px solid transparent;
+
+            &:hover{
+              background: #fff4;
+              transition: all ease 0.3s;
+              cursor: pointer;
+              border-bottom: 2px solid
+              #fff;
+            }
+          }
+
+          ul{
+            display: none;
+            list-style-type: none;
+            position: relative;
+            top: 20px;
+            padding-left: 0;
+            li{
+              height: initial;
+              width: 100%;
+              a{
+                background:#333;
+                border-bottom: 2px solid transparent;
+                margin: 0 auto;
+                &:hover{
+                  background:#333;
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .logo{
+        height: 55px;
+        float: left;
+        margin: 15px;
+
+        @media(min-width:$m-breakpoint){
+          margin:10px;
+        }
+  
+      
+
+      }
+      span{
+        font-size: 30px;
+        font-family: "Noto Serif JP";
+        font-weight: lighter;
+        margin: 15px;
+        display: block;
+        letter-spacing: 0.1em;
+        color: #fff;
+      }
+
+    }
+
+  }
+
+}

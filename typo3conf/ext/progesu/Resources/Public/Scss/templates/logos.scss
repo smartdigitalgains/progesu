@@ -1,0 +1,23 @@
+.logos{
+  display: block;
+  margin:0 auto;
+  width: 80%;
+
+  @media(min-width:$m-breakpoint){
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 80% !important;
+  	object-fit: contain;
+    transition: all ease 0.3s;
+
+    &:hover{
+      zoom: 1.1;
+      transition: all ease 0.3s;
+    }
+
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-03-23UTC10:29:060">
+        <header>
+            <authorName>Tizian Thost</authorName>
+            <authorEmail>tizian@smartdigitalgains.com</authorEmail>
+        </header>
+        <body>
+
+
+            <trans-unit id="elements.richtext">
+                <source>Textarea</source>
+            </trans-unit>
+            <trans-unit id="elements.children">
+                <source>Kinder Elemente</source>
+            </trans-unit>
+            <trans-unit id="elements.bg_position">
+                <source>Hintergrund Position</source>
+            </trans-unit>
+
+        
+        </body>
+    </file>
+</xliff>

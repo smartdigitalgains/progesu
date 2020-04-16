@@ -1,0 +1,8 @@
+tt_content.storage_list =< lib.contentElement
+tt_content.storage_list {
+   templateName = Teaser/StorageList
+   dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10.references.fieldName = image
+   }
+}

@@ -1,0 +1,16 @@
+tt_content.contact_teaser =< lib.contentElement
+tt_content.contact_teaser {
+   templateName = Teaser/ContactTeaser
+      dataProcessing {
+         10 = SmartDigitalGains\Progesu\DataProcessing\ChildElementsProcessor
+         10 {
+               references.fieldName = parent
+               references.table = tt_content
+               as = children
+         }
+        
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20.references.fieldName = image
+
+      }
+}

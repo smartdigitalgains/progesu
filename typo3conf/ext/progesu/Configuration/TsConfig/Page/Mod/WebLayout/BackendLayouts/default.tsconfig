@@ -1,0 +1,84 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+                config {
+                    backend_layout {
+                        colCount = 6
+                        rowCount = 6
+                        rows {
+
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Volle Breite Oben
+                                        colPos = 0
+                                    }
+
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Teaser Oben
+                                        colPos = 1
+                                    }
+
+                                }
+                            }
+
+                            3 {
+                                columns {
+                                    1 {
+                                        name = Inhalt (Text)
+                                        colPos = 2
+                                    }
+                                    2 {
+                                        name = Sidebar
+                                        colPos = 3
+                                    }
+                                }
+                            }
+
+                            4 {
+                                columns {
+                                    1 {
+                                        name = Volle Breite Mitte
+                                        colPos = 4
+                                    }
+                                }
+                            }
+
+                            5 {
+                                columns {
+                                    1 {
+                                        name = Teaser Unten
+                                        colPos = 5
+                                    }
+                                }
+                            }
+
+                            6 {
+                                columns {
+                                    1 {
+                                        name = Unsichtbar
+                                        colPos = 99
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                icon = EXT:progesu/Resources/Public/Images/BackendLayouts/default.png
+
+            }
+        }
+    }
+}

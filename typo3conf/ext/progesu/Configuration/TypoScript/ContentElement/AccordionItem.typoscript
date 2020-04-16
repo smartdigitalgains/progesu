@@ -1,0 +1,16 @@
+tt_content.accordion_item =< lib.contentElement
+tt_content.accordion_item {
+   templateName = Accordion/AccordionItem
+   dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10.references.fieldName = image
+
+       20 = SmartDigitalGains\Progesu\DataProcessing\ChildElementsProcessor
+       20 {
+            references.fieldName = parent
+            references.table = tt_content
+            as = children
+         }
+
+   }
+}

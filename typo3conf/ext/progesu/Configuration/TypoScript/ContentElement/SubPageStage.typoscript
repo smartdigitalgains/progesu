@@ -1,0 +1,8 @@
+tt_content.subpage_stage =< lib.contentElement
+tt_content.subpage_stage {
+   templateName = Stage/SubPageStage
+   dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10.references.fieldName = image
+   }
+}

@@ -1,0 +1,12 @@
+tt_content.customers_teaser =< lib.contentElement
+tt_content.customers_teaser {
+   templateName = Teaser/CustomersTeaser
+      dataProcessing {
+         10 = SmartDigitalGains\Progesu\DataProcessing\ChildElementsProcessor
+         10 {
+               references.fieldName = parent
+               references.table = tt_content
+               as = children
+         }
+      }
+}

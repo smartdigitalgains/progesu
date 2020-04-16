@@ -1,0 +1,93 @@
+version: "3"
+
+services:
+    templates:
+        image: "php:7.3-apache"
+        restart: unless-stopped
+        # We don't need to expose ports on localhost, because we use traefik
+        # ports:
+        #     - "8090:80"
+        volumes:
+            - "./assets:/var/www/html"
+        labels:
+            - traefik.port=80
+            - traefik.enable=true
+            - traefik.backend=example-templates
+            - traefik.frontend.rule=Host:templates.progesu.mokom01projects.test
+            - traefik.frontend.passHostHeader=true
+            - traefik.docker.network=web
+        networks:
+            - web
+
+    database:
+        image: "mysql:5.7"
+        restart: unless-stopped
+        # By default the database ist NOT reachable from the outside to prevent port collisions while starting the container
+        # ports:
+        #     - "4407:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: "1234567890"
+            MYSQL_USER: "typo3"
+            MYSQL_PASSWORD: "1234567890"
+            MYSQL_DATABASE: "typo3"
+        command:
+            - "--character-set-server=utf8"
+            - "--collation-server=utf8_unicode_ci"
+        volumes:
+            - "database:/var/lib/mysql"
+        labels:
+            - "traefik.enable=false"
+        networks:
+            - internal
+        
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:4.7
+        labels:
+            - traefik.enable=true
+            - traefik.backend=example-phpmyadmin
+            - traefik.frontend.rule=Host:phpmyadmin.progesu.mokom01projects.test
+            - traefik.docker.network=web
+        environment:
+            PMA_HOST: "database"
+            PMA_USER: "typo3"
+            PMA_PASSWORD: "1234567890"
+        networks:
+            - internal
+            - web
+
+    typo3:
+        # image: "martinhelmich/typo3:9"
+        build: ./docker/typo3/
+        restart: unless-stopped
+        # We don't need to expose ports on localhost, because we use traefik
+        # ports:
+        #     - "8080:80"
+        volumes:
+            - "./fileadmin:/var/www/html/fileadmin"
+            - "./typo3conf:/var/www/html/typo3conf"
+            - "./uploads:/var/www/html/uploads"
+        environment:
+            - "TYPO3_CONTEXT=Development/Local"
+        labels:
+            - traefik.port=80
+            - traefik.enable=true
+            - traefik.backend=example
+            # Note: Multidomain is possible using comma-separated domains
+            - traefik.frontend.rule=Host:progesu.mokom01projects.test
+            - traefik.frontend.passHostHeader=true
+            - traefik.docker.network=web
+        depends_on:
+            - database
+        networks:
+            - internal
+            - web
+
+volumes:
+    database:
+        driver: local
+
+networks:
+    internal:
+        external: false
+    web:
+        external: true

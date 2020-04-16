@@ -1,0 +1,8 @@
+tt_content.dual_text_teaser =< lib.contentElement
+tt_content.dual_text_teaser {
+   templateName = Teaser/DualTextTeaser
+   dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10.references.fieldName = image
+   }
+}

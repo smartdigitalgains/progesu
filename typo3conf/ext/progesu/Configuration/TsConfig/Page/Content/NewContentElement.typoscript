@@ -1,0 +1,116 @@
+mod.wizards.newContentElement.wizardItems.common {
+
+    elements {
+
+        stage {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:stage.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:test.description
+            tt_content_defValues {
+                CType = stage
+            }
+        }
+
+        subpage_stage {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:subpage_stage.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:subpage_stage.description
+            tt_content_defValues {
+                CType = subpage_stage
+            }
+        }
+
+        dual_text_teaser {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:dual_text_teaser.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:test.description
+            tt_content_defValues {
+                CType = dual_text_teaser
+            }
+        }
+
+        quote_teaser {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:quote_teaser.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:test.description
+            tt_content_defValues {
+                CType = quote_teaser
+            }
+        }
+
+        storage_list {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:storage_list.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:storage_list.description
+            tt_content_defValues {
+                CType = storage_list
+            }
+        }
+
+        promotion_box_grid {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:promotion_box_grid.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:promotion_box_grid.description
+            tt_content_defValues {
+                CType = promotion_box_grid
+            }
+        }
+
+        promotion_box {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:promotion_box.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:promotion_box.description
+            tt_content_defValues {
+                CType = promotion_box
+            }
+        }
+
+        accordion {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:accordion.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:accordion.description
+            tt_content_defValues {
+                CType = accordion
+            }
+        }
+
+        accordion_item {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:accordion_item.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:accordion_item.description
+            tt_content_defValues {
+                CType = accordion_item
+            }
+        }
+
+        customers_teaser {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:customers_teaser.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:customers_teaser.description
+            tt_content_defValues {
+                CType = customers_teaser
+            }
+        }
+
+        customers_teaser_item {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:customers_teaser_item.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:customers_teaser_item.description
+            tt_content_defValues {
+                CType = customers_teaser_item
+            }
+        }
+
+        contact_teaser {
+            iconIdentifier = content-image
+            title = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:contact_teaser.label
+            description = LLL:EXT:progesu/Resources/Private/Language/locallang_be.xlf:contact_teaser.description
+            tt_content_defValues {
+                CType = contact_teaser
+            }
+        }
+
+    }
+
+    show := addToList(stage, subpage_stage, dual_text_teaser, quote_teaser, promotion_box_grid, promotion_box, accordion, accordion_item, contact_teaser, customers_teaser, customers_teaser_item, storage_list)
+}

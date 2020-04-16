@@ -1,0 +1,30 @@
+.button {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1em;
+  transition: all ease 0.2s;
+  background: #242424;
+  color: #fff !important;
+
+  &.green{
+    background: #92b91a;
+    color: #fff;
+  }
+
+  &.center{
+    margin: 0 auto;
+    display: table;
+  }
+
+  &:hover{
+    background: #afcb08;
+    color:#fff;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  }
+
+}

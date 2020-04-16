@@ -1,0 +1,10 @@
+#
+# PageTS for Progesu
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:progesu/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:progesu/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:progesu/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:progesu/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:progesu/Configuration/TsConfig/Page/Content">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:progesu/Configuration/TsConfig/Page/Mod">

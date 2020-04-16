@@ -1,0 +1,12 @@
+tt_content.promotion_box_grid =< lib.contentElement
+tt_content.promotion_box_grid {
+   templateName = Teaser/PromotionBoxGrid
+      dataProcessing {
+         10 = SmartDigitalGains\Progesu\DataProcessing\ChildElementsProcessor
+         10 {
+               references.fieldName = parent
+               references.table = tt_content
+               as = children
+         }
+      }
+}

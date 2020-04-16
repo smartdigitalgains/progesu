@@ -1,0 +1,33 @@
+{namespace sdg=SmartDigitalGains\Progesu\ViewHelpers}
+
+<div class="content">
+
+  <div class="grid">
+    <div class="row">
+      <h2 class="center">{data.header}</h2>
+    </div>
+  </div>
+  
+  <div class="grid">
+    <div class="contact-teaser">
+  
+      <div class="row">
+    
+        <f:for each="{data.children}" as="child">
+            <f:format.raw><sdg:Content uid="{child.uid}" /></f:format.raw>
+        </f:for>
+    
+       </div>
+      <div class="row image">
+    
+        <img class="bg" src="/fileadmin{files.0.originalFile.identifier}" >
+    
+          <div class="content">
+    
+            <f:format.raw>{data.bodytext}</f:format.raw>
+            
+          </div>
+      </div>
+    </div>  
+  </div>
+</div>

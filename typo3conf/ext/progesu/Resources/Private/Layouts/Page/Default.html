@@ -1,0 +1,82 @@
+<div class="app">
+
+<!-- <nav class="mobile-menu">
+  <ul class="">
+    <f:for each="{mainnavigation}" as="mainnavigationItem">
+        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                {mainnavigationItem.title}
+            </a>
+            <f:if condition="{mainnavigationItem.children}">
+                <ul>
+                    <f:for each="{mainnavigationItem.children}" as="child">
+                        <li class="{f:if(condition: child.active, then:'active')}">
+                            <a href="{child.link}" target="{child.target}" title="{child.title}">
+                                {child.title}
+                            </a>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+        </li>
+    </f:for>
+</ul>        
+</nav> -->
+
+<div class="header">
+    <div class="grid">
+      <div class="row">
+        <a href="/"><img class="logo" src="/fileadmin/user_upload/logo.png" /></a>
+      </div>
+      <div class="row not-mobile">
+
+        <ul class="menu">
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                        {mainnavigationItem.title}
+                    </a>
+                    <f:if condition="{mainnavigationItem.children}">
+                        <ul>
+                            <f:for each="{mainnavigationItem.children}" as="child">
+                                <li class="{f:if(condition: child.active, then:'active')}">
+                                    <a href="{child.link}" target="{child.target}" title="{child.title}">
+                                        {child.title}
+                                    </a>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>        
+
+        <a class="button green">Angebot anfordern</a>
+
+      </div>
+      <div class="row mobile">
+        <a href="#mobile-menu" class="button green">Menü öffnen</a>
+      </div>
+    </div>
+  </div>
+
+
+<f:render section="Main" />
+
+<footer>
+    <div class="grid">
+      <div class="row">
+        <p class="center">&copy; PROGESU |
+           
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                    {mainnavigationItem.title}
+                </a> 
+                |
+            </f:for>
+    
+      </div>
+    </div>
+</footer>
+
+</div>

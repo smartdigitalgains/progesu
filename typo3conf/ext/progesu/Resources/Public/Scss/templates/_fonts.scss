@@ -1,0 +1,37 @@
+
+.center{
+  text-align: center;
+}
+
+.serif{
+  font-family: "Noto Serif JP " !important;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color:#92b91a;
+  font-weight: bold;
+}
+
+h1,h2,h3,h4{
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  line-height: 40px;
+  font-size:25px;
+  letter-spacing: 0.03em;
+}
+
+p{
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  &.author{
+    font-style: italic;
+    font-weight: bold;
+  }
+
+}
