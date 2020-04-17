@@ -22,11 +22,19 @@
     
         <img class="bg" src="/fileadmin{files.0.originalFile.identifier}" >
     
-          <div class="content">
-    
-            <f:format.raw>{data.bodytext}</f:format.raw>
+
+        <f:if condition="{data.bodytext}">
+          <f:then>
             
-          </div>
+            <div class="content">
+    
+              <f:format.raw>{data.bodytext}</f:format.raw>
+              
+            </div>
+  
+          </f:then>
+        </f:if>
+
       </div>
     </div>  
   </div>
