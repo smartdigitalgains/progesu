@@ -74,7 +74,7 @@ body .app .content .grid .row.p-20, html .app .content .grid .row.p-20 {
 body .app .content .grid .row.sidebar, html .app .content .grid .row.sidebar {
   position: sticky;
   top: 0;
-  flex: 0 1 40%;
+  flex: 0 1 auto;
 }
 body .app .content .grid .row.sidebar.contact, html .app .content .grid .row.sidebar.contact {
   flex: 0 0 40%;
