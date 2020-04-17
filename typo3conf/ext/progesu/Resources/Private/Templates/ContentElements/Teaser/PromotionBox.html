@@ -2,17 +2,14 @@
 
     <div class="column no-padding">
       <img class="bg" src="/fileadmin{files.0.originalFile.identifier}" >      
-    </div>
-
-    <f:if condition="{data.header}">
-      <f:then>
-        <div class="column">
+      <f:if condition="{data.header}">
+        <f:then>
           <f:format.raw>
             <h2>{data.header}</h2>
           </f:format.raw>
-        </div>    
       </f:then>
-    </f:if>
+      </f:if>  
+    </div>
 
     <f:if condition="{data.bodytext}">
       <f:then>
