@@ -458,6 +458,7 @@ body .app .promotion .grid .box .column.no-padding h2, html .app .promotion .gri
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
+  font-size: 1.3em;
 }
 body .app .promotion .grid .box .column img, html .app .promotion .grid .box .column img {
   width: 100%;
