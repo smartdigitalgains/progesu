@@ -2,14 +2,23 @@
 
     <img class="bg {data.bg_position}" src="/fileadmin{files.0.originalFile.identifier}" >
 
-    <f:if condition="{data.bodytext} && {data.header} ">
+    <f:if condition="{data.header}">
 
         <f:then>
 
         <div class="grid">
             <div class="row">
                 <h2>{data.header}</h2>
-                <span><small>{data.bodytext}</small></span>    
+
+                <f:if condition="{data.bodytext}">
+                    <f:then>
+
+                        <span><small>{data.bodytext}</small></span>   
+
+                    </f:then>
+                </f:if>
+                
+
             </div>
         </div>
 
