@@ -377,80 +377,76 @@ body .app .stage .container .content .backlayer:after, html .app .stage .contain
 body .app .promotion, html .app .promotion {
   margin: 0 auto;
   width: 100%;
-}
-body .app .promotion .grid, html .app .promotion .grid {
-  margin: 0 auto;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 @media (min-width: 375px) {
-  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+  body .app .promotion.x2 .box, html .app .promotion.x2 .box {
     flex: 1 1 100% !important;
   }
 }
 @media (min-width: 1439px) {
-  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+  body .app .promotion.x2 .box, html .app .promotion.x2 .box {
     flex: 1 0 calc(50% - 100px) !important;
   }
 }
 @media (min-width: 1700px) {
-  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+  body .app .promotion.x2 .box, html .app .promotion.x2 .box {
     flex: 1 0 calc(50% - 100px) !important;
   }
 }
 @media (min-width: 375px) {
-  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+  body .app .promotion.x3 .box, html .app .promotion.x3 .box {
     flex: 1 1 100% !important;
   }
 }
 @media (min-width: 1439px) {
-  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+  body .app .promotion.x3 .box, html .app .promotion.x3 .box {
     flex: 1 0 calc(33% - 100px) !important;
   }
 }
 @media (min-width: 1700px) {
-  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+  body .app .promotion.x3 .box, html .app .promotion.x3 .box {
     flex: 1 0 calc(33% - 100px) !important;
   }
 }
-body .app .promotion .grid.x2, html .app .promotion .grid.x2 {
+body .app .promotion.x2, html .app .promotion.x2 {
   flex: 1 0 calc(50% - 100px);
 }
-body .app .promotion .grid .box, html .app .promotion .grid .box {
+body .app .promotion .box, html .app .promotion .box {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 375px) {
-  body .app .promotion .grid .box, html .app .promotion .grid .box {
+  body .app .promotion .box, html .app .promotion .box {
     flex: 1 1 100%;
   }
 }
 @media (min-width: 1439px) {
-  body .app .promotion .grid .box, html .app .promotion .grid .box {
+  body .app .promotion .box, html .app .promotion .box {
     flex: 1 0 calc(20% - 100px);
   }
 }
 @media (min-width: 1700px) {
-  body .app .promotion .grid .box, html .app .promotion .grid .box {
+  body .app .promotion .box, html .app .promotion .box {
     flex: 1 0 calc(20% - 100px);
   }
 }
-body .app .promotion .grid .box:nth-child(2n), html .app .promotion .grid .box:nth-child(2n) {
+body .app .promotion .box:nth-child(2n), html .app .promotion .box:nth-child(2n) {
   background: #ededed;
 }
-body .app .promotion .grid .box .column, html .app .promotion .grid .box .column {
+body .app .promotion .box .column, html .app .promotion .box .column {
   flex-grow: 1;
   text-align: center;
   padding: 25px;
   position: relative;
 }
-body .app .promotion .grid .box .column.no-padding, html .app .promotion .grid .box .column.no-padding {
+body .app .promotion .box .column.no-padding, html .app .promotion .box .column.no-padding {
   padding: 0;
   height: 300px;
 }
-body .app .promotion .grid .box .column.no-padding h2, html .app .promotion .grid .box .column.no-padding h2 {
+body .app .promotion .box .column.no-padding h2, html .app .promotion .box .column.no-padding h2 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -460,7 +456,7 @@ body .app .promotion .grid .box .column.no-padding h2, html .app .promotion .gri
   color: #fff;
   font-size: 1.3em;
 }
-body .app .promotion .grid .box .column img, html .app .promotion .grid .box .column img {
+body .app .promotion .box .column img, html .app .promotion .box .column img {
   width: 100%;
   height: 300px;
   object-fit: cover;

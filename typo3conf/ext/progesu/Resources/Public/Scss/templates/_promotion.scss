@@ -1,113 +1,107 @@
 .promotion{
   margin: 0 auto;
   width: 100%;
-
-  .grid{
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 
 
-    &.x2{
-      .box{
-        @media(min-width:$s-breakpoint){
-          flex: 1 1 100% !important;
-        }
-    
-        @media(min-width:$m-breakpoint){
-          flex: 1 0 calc(50% - 100px) !important;
-  
-  
-        }
-    
-        @media(min-width:$xl-breakpoint){
-          flex: 1 0 calc(50% - 100px) !important;
-  
-        }
-      }
-    }
-    &.x3{
-      .box{
-        @media(min-width:$s-breakpoint){
-          flex: 1 1 100% !important;
-        }
-    
-        @media(min-width:$m-breakpoint){
-          flex: 1 0 calc(33% - 100px) !important;
-  
-  
-        }
-    
-        @media(min-width:$xl-breakpoint){
-          flex: 1 0 calc(33% - 100px) !important;
-  
-        }
-      }
-    }
-
-    &.x2{
-      flex: 1 0 calc(50% - 100px);
-    }
-
-
+  &.x2{
     .box{
-      display: flex;
-      flex-direction: column;
-
       @media(min-width:$s-breakpoint){
-        flex: 1 1 100%;
+        flex: 1 1 100% !important;
       }
   
       @media(min-width:$m-breakpoint){
-        flex: 1 0 calc(20% - 100px);
+        flex: 1 0 calc(50% - 100px) !important;
 
 
       }
   
       @media(min-width:$xl-breakpoint){
-        flex: 1 0 calc(20% - 100px);
+        flex: 1 0 calc(50% - 100px) !important;
 
       }
-    
-
-      &:nth-child(2n){
-        background: #ededed;;
+    }
+  }
+  &.x3{
+    .box{
+      @media(min-width:$s-breakpoint){
+        flex: 1 1 100% !important;
       }
+  
+      @media(min-width:$m-breakpoint){
+        flex: 1 0 calc(33% - 100px) !important;
 
-      .column{
-        flex-grow: 1;
-        text-align: center;
-        padding: 25px;
-        position: relative;
 
-        &.no-padding{
-          padding:0;
-          height: 300px;
+      }
+  
+      @media(min-width:$xl-breakpoint){
+        flex: 1 0 calc(33% - 100px) !important;
 
-          h2{
-            position: absolute;
-            bottom:0;
-            left: 0;
-            width:calc(100% - 20px);
-            padding: 10px;
-            background: rgba(0,0,0,0.5);
-            color: #fff;
-            font-size: 1.3em;
-          }
+      }
+    }
+  }
 
-        }
+  &.x2{
+    flex: 1 0 calc(50% - 100px);
+  }
 
-        img{
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
+
+  .box{
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width:$s-breakpoint){
+      flex: 1 1 100%;
+    }
+
+    @media(min-width:$m-breakpoint){
+      flex: 1 0 calc(20% - 100px);
+
+
+    }
+
+    @media(min-width:$xl-breakpoint){
+      flex: 1 0 calc(20% - 100px);
+
+    }
+  
+
+    &:nth-child(2n){
+      background: #ededed;;
+    }
+
+    .column{
+      flex-grow: 1;
+      text-align: center;
+      padding: 25px;
+      position: relative;
+
+      &.no-padding{
+        padding:0;
+        height: 300px;
+
+        h2{
           position: absolute;
+          bottom:0;
           left: 0;
-          top: 0;
+          width:calc(100% - 20px);
+          padding: 10px;
+          background: rgba(0,0,0,0.5);
+          color: #fff;
+          font-size: 1.3em;
         }
 
+      }
+
+      img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
       }
 
     }
