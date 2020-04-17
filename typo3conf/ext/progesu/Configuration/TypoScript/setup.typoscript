@@ -163,7 +163,9 @@ page {
         slickTheme = EXT:progesu/Resources/Public/Css/slick-theme.css
         mmenu = EXT:progesu/Resources/Public/Css/mmenu-light.css
         progesuLayout = EXT:progesu/Resources/Public/Scss/app.min.css
-                superfish = EXT:progesu/Resources/Public/Css/superfish.css
+        superfish = EXT:progesu/Resources/Public/Css/superfish.css
+        featherlight = EXT:progesu/Resources/Public/Css/featherlight.min.css
+        featherlightGallery = EXT:progesu/Resources/Public/Css/featherlight.gallery.min.css
 
     }
 
@@ -179,6 +181,8 @@ page {
         mmenuPolyfills = EXT:progesu/Resources/Public/JavaScript/Plugins/mmenu-light.polyfills.js
         superfish = EXT:progesu/Resources/Public/JavaScript/Plugins/superfish.js
         matchHeight = EXT:progesu/Resources/Public/JavaScript/Plugins/jquery.matchHeight.min.js
+        featherlight = EXT:progesu/Resources/Public/JavaScript/Plugins/featherlight.min.js
+        featherlightGallery = EXT:progesu/Resources/Public/JavaScript/Plugins/featherlight.gallery.min.js
     }
 
     includeJS {
