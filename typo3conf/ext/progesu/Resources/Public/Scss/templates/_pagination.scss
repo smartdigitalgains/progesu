@@ -1,0 +1,15 @@
+.page-navigation{
+    width: 100%;
+    ul{
+        width: 100%;
+        display:flex;
+        li {
+            flex-grow: 1;
+            padding: 10px;
+            background: #dfdfdf;
+            color: #000;
+            text-align: center;
+            margin: 10px;
+        }    
+    }
+}

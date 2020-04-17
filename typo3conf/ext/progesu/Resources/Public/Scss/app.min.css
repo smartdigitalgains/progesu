@@ -715,6 +715,21 @@ body .app .logos img:hover, html .app .logos img:hover {
   zoom: 1.1;
   transition: all ease 0.3s;
 }
+body .app .page-navigation, html .app .page-navigation {
+  width: 100%;
+}
+body .app .page-navigation ul, html .app .page-navigation ul {
+  width: 100%;
+  display: flex;
+}
+body .app .page-navigation ul li, html .app .page-navigation ul li {
+  flex-grow: 1;
+  padding: 10px;
+  background: #dfdfdf;
+  color: #000;
+  text-align: center;
+  margin: 10px;
+}
 body .app .not-mobile, html .app .not-mobile {
   display: block;
 }
