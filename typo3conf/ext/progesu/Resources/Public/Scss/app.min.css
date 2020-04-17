@@ -112,7 +112,7 @@ body .app .button:hover, html .app .button:hover {
 body .app .header, html .app .header {
   width: 100%;
   margin: 0 auto;
-  background: #242424d6;
+  background: #000000d6;
   top: 0;
   left: 0;
   z-index: 10;
@@ -243,7 +243,7 @@ body .app .stage.subpage-stage, html .app .stage.subpage-stage {
   height: auto;
   z-index: 1;
 }
-body .app .stage.subpage-stage:before, html .app .stage.subpage-stage:before {
+body .app .stage.subpage-stage:after, html .app .stage.subpage-stage:after {
   content: " ";
   display: block;
   width: 100%;
@@ -280,21 +280,7 @@ body .app .stage.subpage-stage .bg.bottom, html .app .stage.subpage-stage .bg.bo
 body .app .stage.subpage-stage .grid, html .app .stage.subpage-stage .grid {
   position: relative;
   color: #fff;
-}
-@media (max-width: 375px) {
-  body .app .stage.subpage-stage .grid, html .app .stage.subpage-stage .grid {
-    height: auto;
-  }
-}
-@media (min-width: 1439px) {
-  body .app .stage.subpage-stage .grid, html .app .stage.subpage-stage .grid {
-    height: 200px;
-  }
-}
-@media (min-width: 1700px) {
-  body .app .stage.subpage-stage .grid, html .app .stage.subpage-stage .grid {
-    height: 200px;
-  }
+  height: 100%;
 }
 body .app .stage.subpage-stage .grid .row, html .app .stage.subpage-stage .grid .row {
   padding: 0 20px 0 20px;

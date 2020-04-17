@@ -15,7 +15,7 @@
   height: auto;
   z-index: 1;
 
-  &:before{
+  &:after{
     content: ' ';
     display:block;
     width:100%;
@@ -57,18 +57,7 @@
     .grid{
       position: relative;
       color: #fff;  
-
-      @media(max-width:$s-breakpoint){
-        height: auto;
-      }
-  
-      @media(min-width:$m-breakpoint){
-        height:200px;
-      }
-  
-      @media(min-width:$xl-breakpoint){
-        height: 200px;
-      }      
+      height: 100%;
 
       .row{
         padding:0 20px 0 20px;
