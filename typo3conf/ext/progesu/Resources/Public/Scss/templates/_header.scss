@@ -82,7 +82,7 @@
             display: none;
             list-style-type: none;
             position: absolute;
-            top: 100%;
+            top:calc(100% + 5px);
             padding-left: 0;
             li{
               height: initial;
