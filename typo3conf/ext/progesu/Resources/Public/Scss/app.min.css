@@ -452,7 +452,6 @@ body .app .promotion .grid .box .column img, html .app .promotion .grid .box .co
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 50%;
 }
 body .app .button, html .app .button {
   padding: 10px;
