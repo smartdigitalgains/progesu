@@ -9,20 +9,66 @@
     flex-wrap: wrap;
     flex-direction: row;
 
+
+    &.x2{
+      .box{
+        @media(min-width:$s-breakpoint){
+          flex: 1 1 100% !important;
+        }
+    
+        @media(min-width:$m-breakpoint){
+          flex: 1 0 calc(50% - 100px) !important;
+  
+  
+        }
+    
+        @media(min-width:$xl-breakpoint){
+          flex: 1 0 calc(50% - 100px) !important;
+  
+        }
+      }
+    }
+    &.x3{
+      .box{
+        @media(min-width:$s-breakpoint){
+          flex: 1 1 100% !important;
+        }
+    
+        @media(min-width:$m-breakpoint){
+          flex: 1 0 calc(33% - 100px) !important;
+  
+  
+        }
+    
+        @media(min-width:$xl-breakpoint){
+          flex: 1 0 calc(33% - 100px) !important;
+  
+        }
+      }
+    }
+
+    &.x2{
+      flex: 1 0 calc(50% - 100px);
+    }
+
+
     .box{
       display: flex;
       flex-direction: column;
 
       @media(min-width:$s-breakpoint){
-        flex: 1 1 calc(100% / 1);
+        flex: 1 1 100%;
       }
   
       @media(min-width:$m-breakpoint){
-        flex: 1 0 calc((100% / 4) - 100px);
+        flex: 1 0 calc(20% - 100px);
+
+
       }
   
       @media(min-width:$xl-breakpoint){
-        flex: 1 0 calc((100% / 4) - 100px);
+        flex: 1 0 calc(20% - 100px);
+
       }
     
 

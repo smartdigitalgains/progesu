@@ -80,6 +80,18 @@ call_user_func(function () {
                     ],
                 ],
             ],
+            'box_grid' => [
+                'exclude' => 1,
+                'label' => 'LLL:EXT:dona_victoria/Resources/Private/Language/locallang_db.xlf:elements.bg_position',
+                'config' => [
+                    'type' => 'select',
+                    'renderType' => 'selectSingle',
+                    'items' => [
+                        ['x2', 'x2'],
+                        ['x3', 'x3'],
+                    ],
+                ],
+            ],
             'children' => [
                 'exclude' => 0,
                 'label' => 'LLL:EXT:dona_victoria/Resources/Private/Language/locallang_db.xlf:elements.children',
@@ -319,7 +331,7 @@ call_user_func(function () {
     $GLOBALS['TCA']['tt_content']['types']['promotion_box_grid'] = [
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;;general,children,
+                --palette--;;general,box_grid,children,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,

@@ -385,23 +385,56 @@ body .app .promotion .grid, html .app .promotion .grid {
   flex-wrap: wrap;
   flex-direction: row;
 }
+@media (min-width: 375px) {
+  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+    flex: 1 1 100% !important;
+  }
+}
+@media (min-width: 1439px) {
+  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+    flex: 1 0 calc(50% - 100px) !important;
+  }
+}
+@media (min-width: 1700px) {
+  body .app .promotion .grid.x2 .box, html .app .promotion .grid.x2 .box {
+    flex: 1 0 calc(50% - 100px) !important;
+  }
+}
+@media (min-width: 375px) {
+  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+    flex: 1 1 100% !important;
+  }
+}
+@media (min-width: 1439px) {
+  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+    flex: 1 0 calc(33% - 100px) !important;
+  }
+}
+@media (min-width: 1700px) {
+  body .app .promotion .grid.x3 .box, html .app .promotion .grid.x3 .box {
+    flex: 1 0 calc(33% - 100px) !important;
+  }
+}
+body .app .promotion .grid.x2, html .app .promotion .grid.x2 {
+  flex: 1 0 calc(50% - 100px);
+}
 body .app .promotion .grid .box, html .app .promotion .grid .box {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 375px) {
   body .app .promotion .grid .box, html .app .promotion .grid .box {
-    flex: 1 1 calc(100% / 1);
+    flex: 1 1 100%;
   }
 }
 @media (min-width: 1439px) {
   body .app .promotion .grid .box, html .app .promotion .grid .box {
-    flex: 1 0 calc((100% / 4) - 100px);
+    flex: 1 0 calc(20% - 100px);
   }
 }
 @media (min-width: 1700px) {
   body .app .promotion .grid .box, html .app .promotion .grid .box {
-    flex: 1 0 calc((100% / 4) - 100px);
+    flex: 1 0 calc(20% - 100px);
   }
 }
 body .app .promotion .grid .box:nth-child(2n), html .app .promotion .grid .box:nth-child(2n) {

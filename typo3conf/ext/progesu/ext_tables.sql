@@ -8,5 +8,6 @@ CREATE TABLE tt_content (
     text_left text DEFAULT '' NOT NULL,
     text_right text DEFAULT '' NOT NULL,
     bg_position text,
+    box_grid text,
 );
 
