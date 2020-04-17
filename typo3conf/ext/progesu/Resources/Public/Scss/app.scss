@@ -41,7 +41,7 @@ body,html{
 
     .not-mobile{
       display:block;
-  
+
       @media(max-width:$m-breakpoint){
         display:none;
       }
@@ -50,11 +50,11 @@ body,html{
 
     .mobile{
       display:none;
-  
+
       @media(max-width:$m-breakpoint){
         display:block;
       }
-  
+
     }
 
     .grid{
