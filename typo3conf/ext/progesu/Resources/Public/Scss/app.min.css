@@ -731,7 +731,7 @@ body .app .page-navigation ul li, html .app .page-navigation ul li {
   text-align: center;
   margin: 10px;
 }
-body .app .page-navigation ul li a, html .app .page-navigation ul li a {
+body .app .page-navigation ul li a, body .app .page-navigation ul li span, html .app .page-navigation ul li a, html .app .page-navigation ul li span {
   display: block;
   padding: 10px;
 }
