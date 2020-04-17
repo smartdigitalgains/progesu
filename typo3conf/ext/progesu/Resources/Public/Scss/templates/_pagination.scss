@@ -3,13 +3,18 @@
     ul{
         width: 100%;
         display:flex;
+        padding:0;
+        list-style-type: none;
         li {
             flex-grow: 1;
-            padding: 10px;
             background: #dfdfdf;
             color: #000;
             text-align: center;
             margin: 10px;
+            a{
+                display:block;
+                padding: 10px;
+            }
         }    
     }
 }

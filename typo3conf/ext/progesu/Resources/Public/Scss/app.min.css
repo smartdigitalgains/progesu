@@ -721,14 +721,19 @@ body .app .page-navigation, html .app .page-navigation {
 body .app .page-navigation ul, html .app .page-navigation ul {
   width: 100%;
   display: flex;
+  padding: 0;
+  list-style-type: none;
 }
 body .app .page-navigation ul li, html .app .page-navigation ul li {
   flex-grow: 1;
-  padding: 10px;
   background: #dfdfdf;
   color: #000;
   text-align: center;
   margin: 10px;
+}
+body .app .page-navigation ul li a, html .app .page-navigation ul li a {
+  display: block;
+  padding: 10px;
 }
 body .app .not-mobile, html .app .not-mobile {
   display: block;
