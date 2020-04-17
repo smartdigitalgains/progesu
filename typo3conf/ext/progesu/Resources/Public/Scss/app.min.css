@@ -240,7 +240,7 @@ body .app .stage, html .app .stage {
 }
 body .app .stage.subpage-stage, html .app .stage.subpage-stage {
   margin-top: 0;
-  height: auto;
+  height: 200px;
 }
 body .app .stage.subpage-stage:after, html .app .stage.subpage-stage:after {
   content: " ";
