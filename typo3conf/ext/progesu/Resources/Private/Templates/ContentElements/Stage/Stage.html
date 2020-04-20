@@ -18,7 +18,12 @@
 
                     <f:if condition="{data.header_link} && {data.cta_text}">
                         <f:then>
-                            <a href="{data.header_link}" class="button">{data.cta_text}</a>
+
+                            <f:link.typolink
+                            parameter="{data.header_link}"
+                            class="button">
+                            {data.cta_text}</f:link.typolink>
+                  
                         </f:then>
                     </f:if>
 
