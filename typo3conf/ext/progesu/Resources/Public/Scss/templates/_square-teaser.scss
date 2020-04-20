@@ -3,7 +3,20 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media(min-width:$s-breakpoint){
+    flex-direction: column;
+  }
+
+  @media(min-width:$m-breakpoint){
+    flex-direction: row;
+  }
+
+  @media(min-width:$xl-breakpoint){
+    flex-direction: row;
+  }
+
 
   .box{
     padding: 50px;
@@ -12,10 +25,23 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    flex: 0 0 calc(50% - 120px);
+    flex: 0 0 calc(100% - 120px);
     position: relative;
     z-index: 1;
     color:#000;
+
+    @media(min-width:$s-breakpoint){
+      flex: 0 0 calc(100% - 120px);
+    }
+  
+    @media(min-width:$m-breakpoint){
+      flex: 0 0 calc(50% - 120px);
+    }
+  
+    @media(min-width:$xl-breakpoint){
+      flex: 0 0 calc(50% - 120px);
+    }
+  
 
     .author-date{
       position: absolute;

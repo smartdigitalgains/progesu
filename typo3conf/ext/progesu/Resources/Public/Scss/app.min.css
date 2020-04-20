@@ -75,6 +75,7 @@ body .app .content .grid .row.sidebar, html .app .content .grid .row.sidebar {
   position: sticky;
   top: 0;
   flex: 0 1 auto;
+  max-width: 30%;
 }
 body .app .content .grid .row.sidebar.contact, html .app .content .grid .row.sidebar.contact {
   flex: 0 0 40%;
@@ -496,7 +497,22 @@ body .app .square-teaser, html .app .square-teaser {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media (min-width: 375px) {
+  body .app .square-teaser, html .app .square-teaser {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1439px) {
+  body .app .square-teaser, html .app .square-teaser {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1700px) {
+  body .app .square-teaser, html .app .square-teaser {
+    flex-direction: row;
+  }
 }
 body .app .square-teaser .box, html .app .square-teaser .box {
   padding: 50px;
@@ -505,10 +521,25 @@ body .app .square-teaser .box, html .app .square-teaser .box {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  flex: 0 0 calc(50% - 120px);
+  flex: 0 0 calc(100% - 120px);
   position: relative;
   z-index: 1;
   color: #000;
+}
+@media (min-width: 375px) {
+  body .app .square-teaser .box, html .app .square-teaser .box {
+    flex: 0 0 calc(100% - 120px);
+  }
+}
+@media (min-width: 1439px) {
+  body .app .square-teaser .box, html .app .square-teaser .box {
+    flex: 0 0 calc(50% - 120px);
+  }
+}
+@media (min-width: 1700px) {
+  body .app .square-teaser .box, html .app .square-teaser .box {
+    flex: 0 0 calc(50% - 120px);
+  }
 }
 body .app .square-teaser .box .author-date, html .app .square-teaser .box .author-date {
   position: absolute;
