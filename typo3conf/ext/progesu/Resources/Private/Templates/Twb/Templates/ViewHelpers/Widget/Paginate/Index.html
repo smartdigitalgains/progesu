@@ -33,12 +33,12 @@
 						<f:if condition="{pagination.previousPage} > 1">
 							<f:then>
 								<f:widget.link useCacheHash="1" addQueryStringMethod="GET" arguments="{currentPage: pagination.previousPage}">
-									<f:translate key="paginate_previous" />
+									Zurück
 								</f:widget.link>
 							</f:then>
 							<f:else>
 								<f:widget.link addQueryStringMethod="GET">
-									<f:translate key="paginate_previous" />
+									Zurück
 								</f:widget.link>
 							</f:else>
 						</f:if>
@@ -82,7 +82,7 @@
 				<f:if condition="{pagination.nextPage}">
 					<li class="last next">
 						<f:widget.link useCacheHash="1" addQueryStringMethod="GET" arguments="{currentPage: pagination.nextPage}">
-							<f:translate key="paginate_next" />
+							Weiter
 						</f:widget.link>
 					</li>
 				</f:if>
